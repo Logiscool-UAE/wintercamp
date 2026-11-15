@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Winter Camps 2026 for Dubai Customs families | Logiscool UAE</title>
+  <meta name="description" content="Roblox, Minecraft and AI winter camps for children of Dubai Customs employees. 14 Dec 2026 – 1 Jan 2027 at Logiscool Cityland Mall, Oasis Mall, Mirdif Sport Society and Sharjah Central Mall.">
+  <meta name="theme-color" content="#00426A">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#00426A', magenta: '#A50050', lime: '#C4D600', sky: '#009CDE', mist: '#F2F7FB' },
+          fontFamily: { display: ['Raleway', 'ui-sans-serif', 'system-ui', 'sans-serif'], sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition-duration: .01ms !important; } }
+    body { font-family: Poppins, system-ui, sans-serif; color: #00426A; background: #fff; -webkit-font-smoothing: antialiased; }
+    .font-display, h1, h2, h3 { font-variant-numeric: lining-nums; font-feature-settings: "lnum" 1; }
+    ::selection { background: #C4D600; color: #00426A; }
+    :focus-visible { outline: 3px solid #009CDE; outline-offset: 3px; }
+
+    /* buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; border-radius: 9999px; padding: .95rem 1.7rem; font-family: Raleway, sans-serif; font-weight: 800; font-size: 1rem; line-height: 1; transition: transform .2s, box-shadow .2s, background .2s; }
+    .btn:active { transform: translateY(1px) scale(.99); }
+    .btn-lime { background: #C4D600; color: #00426A; box-shadow: 0 4px 0 #8f9d00; }
+    .btn-lime:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #8f9d00; }
+    .btn-ghost { border: 2px solid rgba(255,255,255,.35); color: #fff; }
+    .btn-ghost:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+    .btn-outline { border: 2px solid #00426A; color: #00426A; }
+    .btn-outline:hover { background: #00426A; color: #fff; }
+    .btn[disabled] { opacity: .7; cursor: wait; }
+    [data-loading="1"] .btn-label { display: none; }
+    .btn .spin { display: none; }
+    [data-loading="1"] .spin { display: inline-block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spin { width: 1.1rem; height: 1.1rem; border-radius: 9999px; border: 3px solid rgba(0,66,106,.25); border-top-color: #00426A; animation: spin .7s linear infinite; }
+
+    /* form */
+    .label { display: block; margin-bottom: .4rem; font-size: .8rem; font-weight: 700; letter-spacing: .02em; color: #00426A; }
+    .field { width: 100%; border-radius: .85rem; border: 2px solid rgba(0,66,106,.15); background: #fff; padding: .8rem 1rem; color: #00426A; font-size: 1rem; transition: border-color .15s, box-shadow .15s; min-height: 3.1rem; }
+    .field::placeholder { color: rgba(0,66,106,.4); }
+    .field:hover { border-color: rgba(0,66,106,.3); }
+    .field:focus { outline: none; border-color: #009CDE; box-shadow: 0 0 0 4px rgba(0,156,222,.2); }
+    .field[aria-invalid="true"] { border-color: #A50050; box-shadow: 0 0 0 4px rgba(165,0,80,.1); }
+    .err { display: none; margin-top: .4rem; font-size: .85rem; font-weight: 600; color: #A50050; }
+    .err.show { display: block; }
+
+    .branch-card { display: block; cursor: pointer; }
+    .branch-face { display: block; height: 100%; border-radius: 1.4rem; border: 2px solid rgba(0,66,106,.12); background: #fff; padding: 1.1rem; transition: transform .2s, border-color .2s, background .2s, box-shadow .2s; }
+    .branch-card:hover .branch-face { transform: translateY(-3px); border-color: rgba(0,66,106,.35); box-shadow: 0 10px 24px -12px rgba(0,66,106,.35); }
+    .branch-card input:focus-visible + .branch-face { outline: 3px solid #009CDE; outline-offset: 3px; }
+    .branch-card input:checked + .branch-face { background: #00426A; color: #fff; border-color: #00426A; box-shadow: 6px 6px 0 #C4D600; }
+    .branch-card input:checked + .branch-face .tick { background: #C4D600; border-color: #C4D600; color: #00426A; }
+    .branch-card input:checked + .branch-face .bubble { background: rgba(255,255,255,.14); color: #fff; }
+
+    .tile { display: flex; width: 100%; align-items: center; gap: .75rem; border-radius: 1rem; border: 2px solid rgba(0,66,106,.12); background: #fff; padding: .6rem .8rem .6rem .6rem; color: #00426A; text-align: left; transition: transform .15s, border-color .15s, background .15s; }
+    .tile:hover:not([disabled]) { border-color: #009CDE; transform: translateY(-1px); }
+    .tile[aria-pressed="true"] { background: #00426A; color: #fff; border-color: #00426A; }
+    .tile[aria-pressed="true"] .tick { background: #C4D600; border-color: #C4D600; color: #00426A; }
+    .tile[disabled] { cursor: not-allowed; background: rgba(255,255,255,.55); }
+    .tile[disabled] img { filter: grayscale(1); opacity: .45; }
+    .tile[disabled] .font-display { opacity: .5; }
+
+    @keyframes pop { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+    .reveal-in { animation: pop .45s cubic-bezier(.2,.8,.2,.1) both; }
+    .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease var(--d, 0ms), transform .7s cubic-bezier(.2,.8,.2,1) var(--d, 0ms); }
+    .js .reveal.in { opacity: 1; transform: none; }
+    .camp-card { transition: box-shadow .3s; }
+    .camp-card:hover { box-shadow: 8px 8px 0 rgba(0,66,106,.1); }
+    #steps-2:not([hidden]) { animation: pop .5s cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes drift { from { transform: translateY(0) rotate(-6deg); } to { transform: translateY(-8px) rotate(-6deg); } }
+    .sticker { animation: drift 3.2s ease-in-out infinite alternate; }
+    .num { font-variant-numeric: tabular-nums; }
+    fieldset { min-width: 0; }
+  </style>
+</head>
+
+<body>
+  <a href="#register" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-lime focus:px-4 focus:py-2 focus:font-bold">Skip to registration</a>
+
+  <!-- ================= HEADER ================= -->
+  <header id="site-header" class="sticky top-0 z-40 bg-navy transition-shadow">
+    <div class="mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+      <a href="#top" aria-label="Logiscool – back to top" class="flex items-center">
+        <img src="assets/logo/logiscool-white-tag.svg" alt="Logiscool – Create. Code. Enjoy." class="h-10 w-auto">
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-semibold text-white/85 lg:flex" aria-label="Sections">
+        <a class="hover:text-lime" href="#about">About Logiscool</a>
+        <a class="hover:text-lime" href="#camps">Camps</a>
+        <a class="hover:text-lime" href="#dates">Dates &amp; branches</a>
+        <a class="hover:text-lime" href="#offer">Your offer</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <div class="hidden items-center gap-3 rounded-xl bg-white px-3.5 py-1.5 sm:flex" title="In collaboration with Dubai Customs">
+          <span class="text-[10px] font-semibold uppercase leading-tight tracking-wide text-navy/60">In collaboration<br>with</span>
+          <img src="assets/logo/dubai-customs.png" alt="Dubai Customs" class="h-10 w-auto">
+        </div>
+        <a href="#register" class="btn btn-lime !px-5 !py-3 text-sm">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="relative overflow-hidden bg-navy text-white">
+      <!-- brand ring lines -->
+      <svg class="pointer-events-none absolute -right-48 -top-40 hidden h-[46rem] w-[46rem] opacity-90 md:block" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+        <circle cx="300" cy="300" r="270" stroke="#009CDE" stroke-width="2"/>
+        <circle cx="300" cy="300" r="282" stroke="#A50050" stroke-width="2"/>
+        <circle cx="300" cy="300" r="294" stroke="#C4D600" stroke-width="2"/>
+      </svg>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-32 pt-12 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:pb-40 lg:pt-16">
+        <div>
+          <div class="mb-6 flex gap-1.5" aria-hidden="true"><span class="h-3 w-5 rounded-b-full bg-magenta"></span><span class="h-3 w-5 rounded-b-full bg-lime"></span><span class="h-3 w-5 rounded-b-full bg-sky"></span></div>
+          <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-lime">14 Dec 2026 – 1 Jan 2027</p>
+          <h1 class="mt-5 font-display text-4xl font-black leading-[1.05] sm:text-5xl lg:text-[3.6rem]">
+            Winter camps where kids build the game, <span class="text-lime">not just play it.</span>
+          </h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
+            Roblox, Minecraft and AI camps from Logiscool, with a special rate for the children of <strong class="font-semibold text-white">Dubai Customs</strong> employees. Four branches across Dubai and Sharjah, three weeks to choose from.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#register" class="btn btn-lime">Register your child
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#camps" class="btn btn-ghost">See the camps</a>
+          </div>
+          <dl class="mt-10 flex max-w-md gap-8 border-t border-white/15 pt-6">
+            <div><dt class="text-xs font-semibold uppercase tracking-widest text-white/60">Weeks</dt><dd class="font-display text-3xl font-black">3</dd></div>
+            <div><dt class="text-xs font-semibold uppercase tracking-widest text-white/60">Camps</dt><dd class="font-display text-3xl font-black">5</dd></div>
+            <div><dt class="text-xs font-semibold uppercase tracking-widest text-white/60">Branches</dt><dd class="font-display text-3xl font-black">4</dd></div>
+          </dl>
+        </div>
+
+        <!-- collage -->
+        <div class="relative mx-auto grid w-full max-w-xl grid-cols-6 grid-rows-[auto_auto] gap-3 sm:gap-4">
+          <img src="assets/img/camp-minecraft-maze.jpg" alt="Child holding a Minecraft pickaxe breaking out of a cave" class="col-span-4 h-56 w-full rounded-[2rem] rounded-br-lg object-cover sm:h-72">
+          <img src="assets/img/camp-roblox-multiverse.jpg" alt="Child and Roblox character jumping through a digital world" class="col-span-2 h-56 w-full rounded-[2rem] rounded-bl-lg object-cover object-[65%_50%] sm:h-72">
+          <img src="assets/img/camp-minecraft-design.jpg" alt="Child coding on a laptop surrounded by Minecraft characters" class="col-span-3 h-36 w-full rounded-[2rem] rounded-tr-lg object-cover sm:h-48">
+          <img src="assets/img/camp-ai-creator.jpg" alt="Two children designing a website with AI tools" class="col-span-3 h-36 w-full rounded-[2rem] rounded-tl-lg object-cover object-left sm:h-48">
+          <div class="sticker absolute -bottom-6 left-3 rounded-2xl bg-lime px-5 py-3 text-navy shadow-[5px_5px_0_rgba(0,0,0,.25)] sm:left-8">
+            <p class="font-display text-3xl font-black leading-none">30% off</p>
+            <p class="text-xs font-bold uppercase tracking-wider">Dubai · 20% off Sharjah</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- brand wave (white = camps) -->
+      <svg class="absolute inset-x-0 bottom-[-1px] block h-20 w-full sm:h-28" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 52 C 220 102 460 104 720 66 C 980 28 1210 18 1440 58" fill="none" stroke="#009CDE" stroke-width="3"/>
+        <path d="M0 60 C 220 112 460 112 720 74 C 980 36 1210 28 1440 66" fill="none" stroke="#A50050" stroke-width="3"/>
+        <path d="M0 40 C 220 92 460 98 720 58 C 980 18 1210 6 1440 44" fill="none" stroke="#C4D600" stroke-width="3"/>
+        <path d="M0 70 C 220 118 460 118 720 82 C 980 46 1210 40 1440 76 L1440 121 L0 121 Z" fill="#fff"/>
+      </svg>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-28">
+      <div class="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+        <div class="reveal">
+          <p class="text-sm font-bold uppercase tracking-widest text-magenta">What is Logiscool?</p>
+          <h2 class="mt-3 font-display text-3xl font-black leading-tight sm:text-4xl lg:text-[2.7rem]">An international network teaching kids and teens to be <span class="underline decoration-lime decoration-[6px] underline-offset-[6px]">creators</span>, not just consumers, of technology.</h2>
+          <p class="mt-6 text-lg leading-relaxed text-navy/75">
+            Logiscool teaches digital literacy, AI and coding to children aged 6 to 18. Lessons are built around projects kids actually want to make, such as games, websites and worlds, so learning feels like play and builds creativity, logical thinking and problem-solving along the way.
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-navy/75">
+            The winter camps bring that approach into the school holidays: short, hands-on weeks where your child finishes with something real to show.
+          </p>
+          <a href="https://logiscool.com/ae" target="_blank" rel="noopener" class="mt-7 inline-flex items-center gap-2 font-bold underline decoration-sky decoration-4 underline-offset-4 hover:text-sky">Visit logiscool.com/ae
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <div class="space-y-4">
+          <div class="reveal grid gap-4 sm:grid-cols-3">
+            <div class="rounded-3xl bg-magenta p-6 text-white"><p class="font-display text-3xl font-black">Create.</p><p class="mt-2 text-sm text-white/85">Design games, skins, worlds and websites from a blank screen.</p></div>
+            <div class="rounded-3xl bg-lime p-6"><p class="font-display text-3xl font-black">Code.</p><p class="mt-2 text-sm text-navy/80">Pick up scripting, logic and AI tools step by step.</p></div>
+            <div class="rounded-3xl bg-sky p-6 text-white"><p class="font-display text-3xl font-black">Enjoy.</p><p class="mt-2 text-sm text-white/90">Learning that is fun, so kids want to come back.</p></div>
+          </div>
+          <div class="reveal rounded-3xl border border-navy/10 bg-mist p-6 sm:p-7" style="--d:120ms">
+            <p class="text-xs font-bold uppercase tracking-widest text-navy/60">What we stand for</p>
+            <ul class="mt-4 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+              <li class="flex gap-3"><span class="font-display text-xl font-black text-magenta">01</span><span><strong class="block font-display font-extrabold">Innovation</strong><span class="text-sm text-navy/70">New ideas and technology, always at the front.</span></span></li>
+              <li class="flex gap-3"><span class="font-display text-xl font-black text-sky">02</span><span><strong class="block font-display font-extrabold">Fun &amp; engagement</strong><span class="text-sm text-navy/70">Interactive lessons kids enjoy.</span></span></li>
+              <li class="flex gap-3"><span class="font-display text-xl font-black text-magenta">03</span><span><strong class="block font-display font-extrabold">Inclusivity</strong><span class="text-sm text-navy/70">Programmes open to every child.</span></span></li>
+              <li class="flex gap-3"><span class="font-display text-xl font-black text-sky">04</span><span><strong class="block font-display font-extrabold">Quality education</strong><span class="text-sm text-navy/70">Top-notch content and teaching.</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CAMPS ================= -->
+    <section id="camps" class="bg-mist py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="reveal flex flex-wrap items-end justify-between gap-6">
+          <div class="max-w-2xl">
+            <p class="text-sm font-bold uppercase tracking-widest text-magenta">Three weeks. Three creative worlds.</p>
+            <h2 class="mt-3 font-display text-3xl font-black leading-tight sm:text-4xl lg:text-[2.7rem]">Pick the world your child wants to build in</h2>
+            <p class="mt-4 text-lg text-navy/70">Roblox, Minecraft and AI Creator Lab, each with a group for younger and older kids. Open any card to see if it's the right fit.</p>
+          </div>
+          <a href="assets/Logiscool-UAE-2026-Winter-Camps-Descriptions.pdf" download class="btn btn-outline shrink-0">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+            Download full camp details (PDF)
+          </a>
+        </div>
+        <div id="camp-grid" class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- ================= DATES & BRANCHES ================= -->
+    <section id="dates" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-28">
+      <div class="grid gap-10 lg:grid-cols-[0.8fr_1.4fr] lg:gap-16">
+        <div class="reveal lg:sticky lg:top-28 lg:self-start">
+          <p class="text-sm font-bold uppercase tracking-widest text-magenta">Dates &amp; branches</p>
+          <h2 class="mt-3 font-display text-3xl font-black leading-tight sm:text-4xl">Find your week</h2>
+          <p class="mt-4 text-lg text-navy/70">Dubai and Sharjah run on different dates and age groups, so check your branch below.</p>
+          <div class="mt-6 inline-flex rounded-full bg-mist p-1.5" role="tablist" aria-label="Choose emirate">
+            <button type="button" role="tab" data-sched="dubai" aria-selected="true" class="rounded-full px-6 py-2.5 font-display font-extrabold transition">Dubai</button>
+            <button type="button" role="tab" data-sched="sharjah" aria-selected="false" class="rounded-full px-6 py-2.5 font-display font-extrabold transition">Sharjah</button>
+          </div>
+        </div>
+        <div id="schedule-panel" role="tabpanel" aria-live="polite" class="min-h-[28rem]"></div>
+      </div>
+    </section>
+
+    <!-- ================= OFFER ================= -->
+    <section id="offer" class="bg-mist py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="reveal max-w-2xl">
+          <p class="text-sm font-bold uppercase tracking-widest text-magenta">Exclusive for Dubai Customs employees</p>
+          <h2 class="mt-3 font-display text-3xl font-black leading-tight sm:text-4xl lg:text-[2.7rem]">Your family rate, already applied</h2>
+        </div>
+        <div id="offer-cards" class="mt-10 grid gap-6 md:grid-cols-2"></div>
+        <p class="reveal mt-6 max-w-3xl text-sm leading-relaxed text-navy/65">
+          Prices are per child, per camp week. Your Dubai Customs rate replaces the public Winter Camps offers (early bird, multi-week and sibling discounts), which do not apply to this registration. You will see your exact total before you submit.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= REGISTER ================= -->
+    <section id="register" class="relative bg-white py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="reveal max-w-2xl">
+          <p class="text-sm font-bold uppercase tracking-widest text-magenta">Registration</p>
+          <h2 class="mt-3 font-display text-3xl font-black leading-tight sm:text-4xl lg:text-[2.7rem]">Reserve your child's place</h2>
+          <p class="mt-4 text-lg text-navy/70">Takes about two minutes. Siblings can be added in the same form, in the same camps or different ones.</p>
+        </div>
+
+        <!-- success -->
+        <div id="success" hidden class="mx-auto mt-12 max-w-2xl scroll-mt-24">
+          <div class="reveal-in overflow-hidden rounded-[2rem] border border-navy/10 bg-white shadow-[8px_8px_0_#C4D600]">
+            <div class="bg-navy px-6 py-8 text-center text-white sm:px-10">
+              <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-lime text-navy">
+                <svg viewBox="0 0 24 24" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg>
+              </span>
+              <h3 class="mt-5 font-display text-3xl font-black">Registration done successfully!</h3>
+              <p class="mt-3 text-white/85">Thank you, <span id="ok-name" class="font-bold"></span>. Our team will contact you soon to confirm your child's place.</p>
+            </div>
+            <div class="px-6 py-7 sm:px-10">
+              <p id="ok-preview" hidden class="mb-5 rounded-xl border-2 border-dashed border-magenta bg-magenta/5 p-3 text-sm font-semibold text-magenta">Preview mode: the registration endpoint isn't connected yet, so nothing was saved.</p>
+              <div class="flex flex-wrap justify-between gap-2 text-sm">
+                <p>We'll reach you on <strong id="ok-contact"></strong></p>
+                <p id="ok-ref-wrap">Reference <strong id="ok-ref" class="rounded bg-lime/40 px-2 py-0.5"></strong></p>
+              </div>
+              <ul id="ok-recap" class="mt-4 divide-y divide-navy/10 border-y border-navy/10"></ul>
+              <p class="mt-4 flex justify-between font-display text-xl font-black"><span>Total after discount</span><span id="ok-total" class="num"></span></p>
+              <button id="again-btn" type="button" class="btn btn-outline mt-7 w-full sm:w-auto">Register another family member</button>
+            </div>
+          </div>
+        </div>
+
+        <form id="regForm" novalidate class="mt-12 grid items-start gap-10 lg:grid-cols-[1fr_380px]">
+          <div class="min-w-0 space-y-12">
+            <!-- step 1 -->
+            <section aria-labelledby="s1">
+              <div class="flex items-center gap-3">
+                <span class="grid h-10 w-10 place-items-center rounded-full bg-navy font-display text-lg font-black text-white">1</span>
+                <h3 id="s1" class="font-display text-2xl font-black">Choose your branch</h3>
+              </div>
+              <div id="branch-grid" class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4" role="radiogroup" aria-labelledby="s1"></div>
+              <p class="err" data-err="branch" role="alert"></p>
+            </section>
+
+            <div id="steps-2" hidden class="space-y-12">
+              <!-- step 2 -->
+              <section aria-labelledby="s2">
+                <div class="flex items-center gap-3">
+                  <span class="grid h-10 w-10 place-items-center rounded-full bg-navy font-display text-lg font-black text-white">2</span>
+                  <h3 id="s2" class="font-display text-2xl font-black">Add your child and pick camps</h3>
+                </div>
+                <div id="children" class="mt-5 space-y-5"></div>
+                <button id="add-child" type="button" class="mt-5 flex w-full items-center justify-center gap-3 rounded-3xl border-2 border-dashed border-navy/30 bg-mist/60 px-5 py-5 font-display text-lg font-extrabold text-navy transition hover:border-sky hover:bg-sky/10">
+                  <span class="grid h-9 w-9 place-items-center rounded-full bg-lime text-navy"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+                  Add another child
+                </button>
+              </section>
+
+              <!-- step 3 -->
+              <section aria-labelledby="s3">
+                <div class="flex items-center gap-3">
+                  <span class="grid h-10 w-10 place-items-center rounded-full bg-navy font-display text-lg font-black text-white">3</span>
+                  <h3 id="s3" class="font-display text-2xl font-black">Parent details</h3>
+                </div>
+                <div class="mt-5 rounded-3xl border border-navy/10 bg-white p-5 shadow-[6px_6px_0_0_rgba(0,66,106,.08)] sm:p-7">
+                  <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="sm:col-span-2">
+                      <label class="label" for="pname">Full name of parent</label>
+                      <input id="pname" name="pname" data-pf="pname" class="field" type="text" autocomplete="name" placeholder="e.g. Khalid Al Mansoori" maxlength="80">
+                      <p class="err" data-err="pname" role="alert"></p>
+                    </div>
+                    <div>
+                      <label class="label" for="pemail">Parent's email address</label>
+                      <input id="pemail" name="pemail" data-pf="pemail" class="field" type="email" autocomplete="email" inputmode="email" placeholder="name@dubaicustoms.gov.ae" maxlength="120">
+                      <p class="err" data-err="pemail" role="alert"></p>
+                    </div>
+                    <div>
+                      <label class="label" for="pphone">Parent's phone number</label>
+                      <input id="pphone" name="pphone" data-pf="pphone" class="field" type="tel" autocomplete="tel" inputmode="tel" placeholder="+971 50 123 4567" maxlength="24">
+                      <p class="err" data-err="pphone" role="alert"></p>
+                    </div>
+                  </div>
+                  <label class="mt-6 flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-navy/80">
+                    <input id="consent" name="consent" data-pf="consent" type="checkbox" class="mt-1 h-5 w-5 shrink-0 accent-[#00426A]">
+                    <span>I confirm that I am a Dubai Customs employee, that the details above are correct, and that Logiscool may contact me about this registration.</span>
+                  </label>
+                  <p class="err" data-err="consent" role="alert"></p>
+                  <!-- honeypot: humans never see or fill this -->
+                  <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] h-0 w-0 opacity-0">
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- summary -->
+          <aside id="summary" class="lg:sticky lg:top-24" aria-live="polite">
+            <div class="overflow-hidden rounded-[2rem] bg-navy text-white shadow-[8px_8px_0_#C4D600]">
+              <div class="flex gap-1.5 px-6 pt-5" aria-hidden="true"><span class="h-2.5 w-4 rounded-b-full bg-magenta"></span><span class="h-2.5 w-4 rounded-b-full bg-lime"></span><span class="h-2.5 w-4 rounded-b-full bg-sky"></span></div>
+              <div class="p-6 pt-3">
+                <h3 class="font-display text-2xl font-black">Your summary</h3>
+                <div id="summary-body" class="mt-4 text-[15px]"></div>
+                <dl class="mt-5 space-y-2 border-t border-white/15 pt-5 text-sm">
+                  <div class="flex justify-between"><dt class="text-white/75">Total before discount</dt><dd id="sum-before" class="num font-semibold">AED 0</dd></div>
+                  <div class="flex justify-between text-lime"><dt>Dubai Customs discount (<span id="sum-pct">30</span>%)</dt><dd id="sum-discount" class="num font-semibold">AED 0</dd></div>
+                </dl>
+                <div class="mt-4 flex items-end justify-between rounded-2xl bg-white/10 px-4 py-3">
+                  <span class="font-display text-sm font-extrabold uppercase tracking-wider text-white/80">Total to pay</span>
+                  <span id="sum-total" class="num font-display text-3xl font-black text-lime">AED 0</span>
+                </div>
+                <p id="form-error" class="mt-4 hidden rounded-xl bg-magenta px-4 py-3 text-sm font-semibold" role="alert"></p>
+                <button id="submit-btn" type="submit" class="btn btn-lime mt-5 w-full">
+                  <span class="spin" aria-hidden="true"></span>
+                  <span class="btn-label">Submit registration</span>
+                </button>
+                <p class="mt-3 text-center text-xs text-white/60">Nothing is charged online. Our team will contact you after you submit.</p>
+              </div>
+            </div>
+          </aside>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="relative bg-navy text-white">
+    <svg class="absolute inset-x-0 top-0 block h-10 w-full -translate-y-[calc(100%-1px)]" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 24 C 300 -6 560 -6 800 14 C 1040 34 1250 30 1440 10 L1440 40Z" fill="#00426A"/></svg>
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.2fr_1fr_1fr]">
+      <div>
+        <img src="assets/logo/logiscool-white-tag.svg" alt="Logiscool – Create. Code. Enjoy." class="h-10 w-auto">
+        <p class="mt-4 max-w-sm text-sm leading-relaxed text-white/70">International network of digital literacy and coding education for kids &amp; teens, ages 6–18.</p>
+      </div>
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-lime">Branches</p>
+        <ul class="mt-3 space-y-1.5 text-sm text-white/85"><li>Cityland Mall, Dubai</li><li>Oasis Mall, Dubai</li><li>Mirdif Sport Society, Dubai</li><li>Sharjah Central Mall, Sharjah</li></ul>
+      </div>
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-lime">More</p>
+        <ul class="mt-3 space-y-1.5 text-sm text-white/85">
+          <li><a class="hover:text-lime" href="https://logiscool.com/ae" target="_blank" rel="noopener">logiscool.com/ae</a></li>
+          <li><a class="hover:text-lime" href="assets/Logiscool-UAE-2026-Winter-Camps-Descriptions.pdf" download>Camp descriptions (PDF)</a></li>
+          <li><a class="hover:text-lime" href="#register">Register</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-5 text-center text-xs text-white/55">© 2026 Logiscool UAE · Winter Camps 2026/27 · Offer for Dubai Customs employees</div>
+  </footer>
+
+  <!-- mobile total bar -->
+  <div id="mobile-bar" data-has="0" aria-hidden="true" class="fixed inset-x-0 bottom-0 z-40 translate-y-full bg-navy px-4 py-3 text-white shadow-[0_-8px_24px_rgba(0,0,0,.25)] transition-transform duration-300 lg:hidden">
+    <div class="mx-auto flex max-w-xl items-center justify-between gap-4">
+      <div><p id="mobile-count" class="text-xs font-semibold text-white/70"></p><p id="mobile-total" class="num font-display text-2xl font-black text-lime">AED 0</p></div>
+      <button id="mobile-review" type="button" class="btn btn-lime !px-6 !py-3 text-sm">Review &amp; submit</button>
+    </div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite" class="pointer-events-none fixed bottom-24 left-1/2 z-50 w-[min(92vw,26rem)] -translate-x-1/2 translate-y-3 rounded-2xl bg-navy px-5 py-3 text-center text-sm font-semibold text-white opacity-0 shadow-xl transition duration-300 lg:bottom-8"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
